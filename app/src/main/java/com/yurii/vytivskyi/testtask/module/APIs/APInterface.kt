@@ -14,7 +14,7 @@ interface APInterface {
 
     companion object {
 
-         const val BASE_URL = "https://api.giphy.com/"
+        const val BASE_URL = "https://api.giphy.com/"
 
     }
 

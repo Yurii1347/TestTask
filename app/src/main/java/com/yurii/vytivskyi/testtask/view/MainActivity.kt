@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity(), SimpleAdaptor.ItemClickListener {
     lateinit var binding: ActivityMainBinding
 
     private val viewModel by viewModel<MainViewModel>()
+
     private lateinit var mSimpleAdaptor: SimpleAdaptor
     private lateinit var mRecycleView: RecyclerView
 
@@ -46,8 +47,7 @@ class MainActivity : AppCompatActivity(), SimpleAdaptor.ItemClickListener {
         mRecycleView = binding.recycleView
         if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
             mRecycleView.layoutManager = GridLayoutManager(this, 1)
-        } else
-        {
+        } else {
             mRecycleView.layoutManager = GridLayoutManager(this, 3)
         }
     }

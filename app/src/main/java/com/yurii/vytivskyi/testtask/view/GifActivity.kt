@@ -1,8 +1,8 @@
 package com.yurii.vytivskyi.testtask.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.yurii.vytivskyi.testtask.databinding.ActivityGifBinding
 import com.yurii.vytivskyi.testtask.viewmodel.MainViewModel

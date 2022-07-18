@@ -9,8 +9,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
 class MainViewModel(
-    private val mGifRepository: GifRepository)
-    : ViewModel() {
+    private val mGifRepository: GifRepository
+) : ViewModel() {
 
     private val _gifs = MutableLiveData<List<Data?>>()
     val gifs: LiveData<List<Data?>> = _gifs
