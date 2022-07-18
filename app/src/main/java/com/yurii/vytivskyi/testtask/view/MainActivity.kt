@@ -1,6 +1,7 @@
 package com.yurii.vytivskyi.testtask.view
 
 import android.content.Intent
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
@@ -43,7 +44,12 @@ class MainActivity : AppCompatActivity(), SimpleAdaptor.ItemClickListener {
 
     private fun initRecycleView() {
         mRecycleView = binding.recycleView
-        mRecycleView.layoutManager = GridLayoutManager(this, 1)
+        if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            mRecycleView.layoutManager = GridLayoutManager(this, 1)
+        } else
+        {
+            mRecycleView.layoutManager = GridLayoutManager(this, 3)
+        }
     }
 
     override fun onClick(id: String) {

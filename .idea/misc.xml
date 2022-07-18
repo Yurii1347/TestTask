@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/banana/AndroidStudioProjects/TestTask/app/src/main/res/layout-land/activity_main.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/banana/AndroidStudioProjects/TestTask/app/src/main/res/layout-land/recycler_view_item.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/banana/AndroidStudioProjects/TestTask/app/src/main/res/layout/activity_gif.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/banana/AndroidStudioProjects/TestTask/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/banana/AndroidStudioProjects/TestTask/app/src/main/res/layout/recycler_view_item.xml" value="0.36666666666666664" />
