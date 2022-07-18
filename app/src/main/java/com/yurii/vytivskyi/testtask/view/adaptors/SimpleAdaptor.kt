@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.yurii.vytivskyi.testtask.R
-import com.yurii.vytivskyi.testtask.data.Data
+import com.yurii.vytivskyi.testtask.data.db.Data
 import com.yurii.vytivskyi.testtask.databinding.RecyclerViewItemBinding
 import com.yurii.vytivskyi.testtask.view.MainActivity
 

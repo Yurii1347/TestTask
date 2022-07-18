@@ -5,13 +5,14 @@ import android.os.Bundle
 import android.util.Log
 import com.bumptech.glide.Glide
 import com.yurii.vytivskyi.testtask.databinding.ActivityGifBinding
-import com.yurii.vytivskyi.testtask.viewmodel.ViewModel
+import com.yurii.vytivskyi.testtask.viewmodel.MainViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class GifActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityGifBinding
 
-    private val mViewModel: ViewModel = ViewModel()
+    private val viewModel by viewModel<MainViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,13 +20,13 @@ class GifActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val id = intent.getStringExtra("id")
-        mViewModel.getGifDetail(id)
+        viewModel.getGifDetail(id)
         initObserver()
 
     }
 
     private fun initObserver() {
-        mViewModel.gifsDetail.observe(this@GifActivity) {
+        viewModel.gifsDetail.observe(this@GifActivity) {
             Glide.with(this).load(it).into(binding.imageView2)
             Log.d("lol", it)
         }
